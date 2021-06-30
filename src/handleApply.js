@@ -4,7 +4,7 @@ const { sha1 } = require('crypto-hash')
 
 
 const handleApply = ({ compiler, options }) => {
-  const { mediaOptions, minify, chunkFileName: chunkFileNamePattern } = options
+  const { mediaOptions, minify, exclude, chunkFileName: chunkFileNamePattern } = options
 
   const pluginName = 'media-query-splitting-plugin'
 

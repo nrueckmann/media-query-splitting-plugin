@@ -12,6 +12,7 @@ var handleApply = function handleApply(_ref) {
       options = _ref.options;
   var mediaOptions = options.mediaOptions,
       minify = options.minify,
+      exclude = options.exclude,
       chunkFileNamePattern = options.chunkFileName;
   var pluginName = 'media-query-splitting-plugin';
   compiler.hooks.thisCompilation.tap(pluginName, function (compilation) {
